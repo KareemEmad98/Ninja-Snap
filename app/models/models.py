@@ -1,6 +1,5 @@
 import logging
 
-
 from app import db
 
 db_logger = logging.getLogger("db_logger")

@@ -5,6 +5,7 @@ from logging.handlers import RotatingFileHandler
 from flask import Flask
 from flask_bootstrap import Bootstrap
 from flask_sqlalchemy import SQLAlchemy
+
 from app.config import Config
 
 db = SQLAlchemy()

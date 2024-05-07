@@ -1,9 +1,9 @@
 import logging
 
-from flask import Blueprint, render_template, request, redirect, url_for
+from flask import Blueprint, redirect, render_template, request, url_for
 
 from app.api.snapchat_api import SnapchatAPI
-from app.models.models import Segment, Identifier, IdentifierType
+from app.models.models import Identifier, IdentifierType, Segment
 
 main_blueprint = Blueprint("main", __name__)
 app_logger = logging.getLogger("app_logger")

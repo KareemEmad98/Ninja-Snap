@@ -1,7 +1,7 @@
 import json
 
 from app import Config
-from app.utils import hashing, api
+from app.utils import api, hashing
 from app.utils.auth import OAuthHandler
 
 

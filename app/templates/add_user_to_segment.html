@@ -1,0 +1,32 @@
+{% extends 'layout.html' %}
+
+{% block title %}New Segment{% endblock %}
+
+{% block header %}
+    {{ super() }}
+{% endblock %}
+
+{% block content %}
+    <h2>Add User to Segment</h2>
+    <form action="{{ url_for('main.add_user_to_segment', segment_id=segment_id) }}" method="post">
+        <div class="mb-3">
+            <label for="identifier-type" class="form-label">Identifier Type:</label>
+            <select class="form-select" id="identifier-type" name="identifier_type">
+                <option value="email">Email</option>
+                <option value="phone">Phone Number</option>
+                <option value="mobile">Mobile Number</option>
+            </select>
+        </div>
+        <div id="identifier-values">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" name="identifier_value[]">
+                <button class="btn btn-danger remove" type="button">Remove</button>
+            </div>
+        </div>
+        <button id="add-more" type="button" class="btn btn-primary">Add More</button>
+        <button type="submit" class="btn btn-success">Submit</button>
+    </form>
+
+
+{% endblock %}
+

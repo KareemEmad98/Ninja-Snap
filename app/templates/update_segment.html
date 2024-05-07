@@ -1,0 +1,29 @@
+{% extends 'layout.html' %}
+
+{% block title %}New Segment{% endblock %}
+
+{% block header %}
+    {{ super() }}
+{% endblock %}
+
+{% block content %}
+    <h2>Update Segment</h2>
+    <form action="{{ url_for('main.update_segment', segment_id=segment.id) }}" method="post">
+        <div class="form-group">
+            <label for="name">Segment Name:</label>
+            <input type="text" class="form-control" id="name" name="name" value="{{ segment.name }}" required>
+        </div>
+        <div class="form-group">
+            <label for="description">Description:</label>
+            <input class="form-control" id="description" name="description" value="{{ segment.description }}"
+                   required>
+        </div>
+        <div class="form-group">
+            <label for="retention_days">Retention Days:</label>
+            <input type="number" class="form-control" id="retention_days" name="retention_days"
+                   value="{{ segment.retention_days }}" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Update Segment</button>
+    </form>
+{% endblock %}
+

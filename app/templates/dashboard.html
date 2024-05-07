@@ -1,0 +1,55 @@
+{% extends 'layout.html' %}
+
+{% block title %}New Segment{% endblock %}
+
+{% block header %}
+{{ super() }}
+<div class="mt-3 mb-3">
+    <a class="btn btn-primary" href="{{ url_for('main.add_segment') }}">Add New Segment</a>
+</div>
+{% endblock %}
+
+{% block content %}
+<section class="segment-list">
+    <h4 class="mb-3">Segments Overview</h4>
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>Segment ID</th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Retention (days)</th>
+            <th>Upload Status</th>
+            <th>Approx. Users</th>
+            <th>Targetable Status</th>
+            <th>Actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for segment in segments %}
+        <tr>
+            <td>{{ segment.id }}</td>
+            <td>{{ segment.name }}</td>
+            <td>{{ segment.description }}</td>
+            <td>{{ segment.retention_days }}</td>
+            <td>{{ segment.upload_status }}</td>
+            <td>{{ segment.approx_users }}</td>
+            <td>{{ segment.targetable_status }}</td>
+            <td class="actions">
+                <a class="btn btn-sm btn-primary"
+                   href="{{ url_for('main.add_user_to_segment', segment_id=segment.id) }}">Add Identifiers</a>
+                <a class="btn btn-sm btn-info"
+                   href="{{ url_for('main.view_segment_identifiers', segment_id=segment.id) }}">View Identifiers</a>
+                <a class="btn btn-sm btn-secondary" href="{{ url_for('main.update_segment', segment_id=segment.id) }}">Update</a>
+                <form action="{{ url_for('main.delete_segment', segment_id=segment.id) }}" method="post"
+                      onsubmit="return confirm('Are you sure you want to delete this segment?');">
+                    <input type="hidden" value="{{segment.id}}" name="segment_id">
+                    <button type="submit" class="btn btn-danger btn-sm">Delete</button>
+                </form>
+            </td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</section>
+{% endblock %}

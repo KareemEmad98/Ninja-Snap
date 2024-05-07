@@ -1,0 +1,31 @@
+{% extends 'layout.html' %}
+
+{% block title %}New Segment{% endblock %}
+
+{% block header %}
+    {{ super() }}
+{% endblock %}
+
+{% block content %}
+<div class="container error">
+        {% for error in errors %}
+        <h4 style="color:red;">{{error}}</h4>
+        {% endfor %}
+    </div>
+    <h2>Add Segment</h2>
+    <form action="{{ url_for('main.add_segment') }}" method="post">
+        <div class="form-group">
+            <label for="name">Segment Name:</label>
+            <input type="text" class="form-control" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="description">Description:</label>
+            <textarea class="form-control" id="description" name="description" required></textarea>
+        </div>
+        <div class="form-group">
+            <label for="retention_days">Retention Days:</label>
+            <input type="number" class="form-control" id="retention`_days" name="retention_days" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Add Segment</button>
+    </form>
+{% endblock %}

@@ -4,11 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db7f198c-a616-4a7c-bc78-796cefd288a9" name="Changes" comment="Add initial .gitignore, project files" />
+    <list default="true" id="db7f198c-a616-4a7c-bc78-796cefd288a9" name="Changes" comment="Added project dependencies">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -25,13 +36,56 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.config.executor": "Run",
+    "Python.main.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/pc/PycharmProjects/Ninja-Snap"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\pc\PycharmProjects\Ninja-Snap" />
+      <recent name="C:\Users\pc\PycharmProjects\Ninja-Snap\app" />
+      <recent name="C:\Users\pc\PycharmProjects\Ninja-Snap\app\templates" />
+      <recent name="C:\Users\pc\PycharmProjects\Ninja-Snap\app\utils" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\pc\PycharmProjects\Ninja-Snap" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Ninja-Snap" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -56,7 +110,119 @@
       <option name="project" value="LOCAL" />
       <updated>1715040214428</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added API utils class">
+      <option name="closed" value="true" />
+      <created>1715040587366</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1715040587366</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Added Auth utils class to handle Snapchat auth">
+      <option name="closed" value="true" />
+      <created>1715040627247</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1715040627247</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Added hashing utils">
+      <option name="closed" value="true" />
+      <created>1715040678118</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1715040678118</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Added Snapchat API interaction module">
+      <option name="closed" value="true" />
+      <created>1715040766239</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1715040766239</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Added main layout template">
+      <option name="closed" value="true" />
+      <created>1715040824481</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1715040824481</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Added bootstrap.css to static css directory">
+      <option name="closed" value="true" />
+      <created>1715040867313</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1715040867313</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Added templates for main functionality">
+      <option name="closed" value="true" />
+      <created>1715040914449</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1715040914449</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Added Config File">
+      <option name="closed" value="true" />
+      <created>1715040982964</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1715040982964</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Added ORM database models">
+      <option name="closed" value="true" />
+      <created>1715041034193</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1715041034193</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Added view functions for routing and logic">
+      <option name="closed" value="true" />
+      <created>1715041114380</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1715041114380</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Added app initialization functions">
+      <option name="closed" value="true" />
+      <created>1715041254241</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1715041254241</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Added main.py">
+      <option name="closed" value="true" />
+      <created>1715041535134</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1715041535134</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Added unit tests dir">
+      <option name="closed" value="true" />
+      <created>1715041554170</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1715041554170</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Added project dependencies">
+      <option name="closed" value="true" />
+      <created>1715041576803</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1715041576803</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -72,6 +238,20 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add initial .gitignore, project files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add initial .gitignore, project files" />
+    <MESSAGE value="Added API utils class" />
+    <MESSAGE value="Added Auth utils class to handle Snapchat auth" />
+    <MESSAGE value="Added hashing utils" />
+    <MESSAGE value="Added Snapchat API interaction module" />
+    <MESSAGE value="Added main layout template" />
+    <MESSAGE value="Added bootstrap.css to static css directory" />
+    <MESSAGE value="Added templates for main functionality" />
+    <MESSAGE value="Added Config File" />
+    <MESSAGE value="Added ORM database models" />
+    <MESSAGE value="Added view functions for routing and logic" />
+    <MESSAGE value="Added app initialization functions" />
+    <MESSAGE value="Added main.py" />
+    <MESSAGE value="Added unit tests dir" />
+    <MESSAGE value="Added project dependencies" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added project dependencies" />
   </component>
 </project>

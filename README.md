@@ -38,30 +38,26 @@ Prerequisites
 
 Installation Steps
 
-    Clone the repository:
+- Clone the repository:
 
-    bash
 
-git clone <repository-url>
+    git clone https://github.com/KareemEmad98/Ninja-Snap.git
 
-Navigate to the project directory:
+- Navigate to the project directory:
 
-bash
 
-cd <project-name>
+    cd Ninja-Snap
 
-Install the required dependencies:
+- Install the required dependencies:
 
-bash
 
     pip install -r requirements.txt
 
-Running the Application
+- Running the Application
 
     Set environment variables as described in the Config class.
     Run the Flask application:
 
-    bash
 
     flask run
 

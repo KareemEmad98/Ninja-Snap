@@ -19,9 +19,9 @@ class OAuthHandler:
         headers = {
             "Content-Type": "application/x-www-form-urlencoded",
         }
-        print(
-            self.oauth_session.refresh_token(Config.TOKEN_URL, **extra, headers=headers)
-        )
+
+        self.oauth_session.refresh_token(Config.TOKEN_URL, **extra, headers=headers)
+
 
     def get_session_with_headers(self):
         access_token = self.oauth_session.token["access_token"]
